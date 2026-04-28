@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adinkra | Isabella Boateng</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="logo">IB</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="adinkra.html">Adinkra</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="adinkra-page-hero">
+        <p class="eyebrow">Adinkra</p>
+        <h1>Identity.</h1>
+        <p>
+            A collection of Ghanaian Adinkra symbols that reflect values I carry into my design,
+            leadership, and creative work.
+        </p>
+    </section>
+
+    <!-- ADINKRA -->
+    <section class="adinkra-collection">
+
+        <!-- SYMBOL GRID -->
+        <div class="adinkra-symbol-grid">
+
+            <!-- Gye Nyame (default selected) -->
+            <button class="symbol-card active" data-name="Gye Nyame"
+                data-meaning="Gye Nyame, meaning “except for God,” is one of the most widely recognized Adinkra symbols. It represents the supremacy and omnipotence of God, expressing the belief that nothing exists beyond or without divine power.">
+
+                <img src="assets/icons/gye-nyame-green.png" alt="Gye Nyame">
+                <span>Gye Nyame</span>
+            </button>
+
+            <!-- Sankofa -->
+            <button class="symbol-card" data-name="Sankofa"
+                data-meaning="Sankofa, meaning “go back and get it,” represents the importance of learning from the past in order to move forward. It emphasizes retrieving knowledge, wisdom, and experiences from history to guide future growth and progress.">
+
+                <img src="assets/icons/sankofa.png" alt="Sankofa">
+                <span>Sankofa</span>
+            </button>
+
+            <!-- Dwennimmen -->
+            <button class="symbol-card" data-name="Dwennimmen"
+                data-meaning="Dwennimmen, meaning “ram’s horns,” symbolizes humility together with strength. It reflects the idea that true strength comes with modesty, and that even the strong must remain humble and open to growth.">
+
+                <img src="assets/icons/dwennimmen.png" alt="Dwennimmen">
+                <span>Dwennimmen</span>
+            </button>
+
+        </div>
+
+        <!-- DETAIL PANEL (ONLY ONE) -->
+        <div class="symbol-detail">
+            <p class="eyebrow">Selected Symbol</p>
+
+            <h2 id="symbol-title">Gye Nyame</h2>
+
+            <p id="symbol-meaning">
+                Gye Nyame, meaning “except for God,” is one of the most widely recognized Adinkra symbols. It represents
+                the supremacy and omnipotence of God, expressing the belief that nothing exists beyond or without divine
+                power.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+
+            <div class="footer-top">
+                <h2>Let’s build something meaningful.</h2>
+                <a href="mailto:your-email@gmail.com" class="footer-cta">
+                    Get in touch →
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <p>© 2026 Isabella Boateng</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://github.com/BellaBoateng" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/isabella-boateng" target="_blank">LinkedIn</a>
+                    <a href="mailto:your-email@gmail.com">Email</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
