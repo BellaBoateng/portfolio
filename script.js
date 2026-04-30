@@ -147,6 +147,12 @@ const galleryData = {
     "assets/images/processing-game/gameplay-1.png",
     "assets/images/processing-game/gameplay-2.png",
     "assets/images/processing-game/gameplay-3.png"
+  ],
+
+  miniSpotify: [
+    "assets/images/mini-spotify/spotify-1.png",
+    "assets/images/mini-spotify/spotify-2.png",
+    "assets/images/mini-spotify/spotify-3.png"
   ]
 };
 
@@ -168,7 +174,8 @@ if (folderCards.length && modal && modalGallery) {
         k1nnectResearch: "Research + Process",
         k1nnectPrototype: "Prototype Screens",
         processingProcess: "Concept + Logic",
-        processingGameplay: "Gameplay Screens"
+        processingGameplay: "Gameplay Screens",
+        miniSpotify: "Mini Spotify Gallery"
       };
 
       modalTitle.textContent = galleryTitles[galleryType] || "Gallery";

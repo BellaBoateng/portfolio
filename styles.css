@@ -26,6 +26,20 @@ section {
     font-size: clamp(34px, 3.4vw, 50px);
 }
 
+.interests-inner .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    color: #A3472D;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+    display: block;
+}
+
+.interests-inner h2 {
+    margin-top: 0;
+}
+
 /* NAV */
 .nav {
     width: 100%;
@@ -1275,10 +1289,56 @@ section {
 }
 
 .recommendation-card {
-    min-height: 150px;
+    min-height: 210px;
     background-color: #EFE6D8;
     border: 1px solid #CFC2AE;
     border-radius: 18px;
+    padding: 26px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-6px);
+    border-color: #A3472D;
+    box-shadow: 0 14px 34px rgba(15, 61, 49, 0.12);
+}
+
+.rec-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #A3472D;
+    font-weight: 700;
+}
+
+.recommendation-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #0F3D31;
+    margin: 16px 0 10px;
+}
+
+.recommendation-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #3A3A3A;
+}
+
+.recommendation-card small {
+    color: #0F3D31;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.empty-rec {
+    opacity: 0.65;
+    border-style: dashed;
 }
 
 @media (max-width: 900px) {
@@ -2207,4 +2267,40 @@ section {
 .folder-card {
     text-decoration: none;
     color: inherit;
+}
+
+
+
+
+/* STUDENT PERFORMANCE HERO FIX */
+
+.student-project-page .project-detail-hero {
+    align-items: center;
+    gap: 60px;
+}
+
+/* SMALLER TITLE */
+.student-project-page .project-detail-text h1 {
+    font-size: clamp(42px, 4.5vw, 64px); /* smaller than before */
+    line-height: 0.95;
+}
+
+/* Slightly tighter paragraph so it doesn't push layout */
+.student-project-page .project-detail-text p {
+    max-width: 520px;
+}
+
+/* BIGGER IMAGE */
+.student-project-page .project-detail-image {
+    flex: 1.2; /* gives image more space */
+    display: flex;
+    justify-content: center;
+}
+
+.student-project-page .project-detail-image img {
+    width: 100%;
+    max-width: 520px; /* bigger */
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 24px;
 }
