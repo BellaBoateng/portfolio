@@ -150,9 +150,9 @@ const galleryData = {
   ],
 
   miniSpotify: [
-    "assets/images/mini-spotify/spotify-1.png",
-    "assets/images/mini-spotify/spotify-2.png",
-    "assets/images/mini-spotify/spotify-3.png"
+    "assets/images/mini-spotify/mini1.png",
+    "assets/images/mini-spotify/mini2.png",
+    "assets/images/mini-spotify/mini3.png"
   ]
 };
 
